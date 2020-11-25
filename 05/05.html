@@ -1,0 +1,402 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>鋼彈新聞</title>
+	<link href="http://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+	
+	<!-- 導覽列 -->
+	
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<![endif]-->
+		<style type="text/css">
+	.navbar-brand{
+		display: inline-block;
+		width: 150px;
+	}
+	@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}				  	/* 導覽列 */
+
+	.col-md-6 {
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 10%;
+		}
+		.demo{padding: 2em 0;}
+		a:hover,a:focus{
+		    text-decoration: none;
+		    outline: none;
+		}
+		/*外框*/
+		#accordion .panel{
+		    border: none;
+		    box-shadow: none;
+		    border-radius: 0px;
+		    margin-bottom: 0px;
+			width: 80%;
+			border-radius: 30px;
+		}
+		
+		/*外條*/
+		#accordion .panel-heading{
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    width: 100%;
+    height: 10%;
+		}
+
+		
+		/*外條*/
+		#accordion .panel-title a{
+    display: block;
+    padding: 20px 35px;
+    font-size: 25px;
+    font-weight: 100%;
+    color: #fff;
+    background: #888bc2;
+    border: none;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+	height: 10%;
+    border-radius: 30px;
+		}
+		#accordion .panel-title a:after,
+		#accordion .panel-title a.collapsed:after{
+		    content: "\f068";
+		    font-family: fontawesome;
+		    width: 40px;
+		    height: 40px;
+		    line-height: 32px;
+		    border-radius: 100%;
+		    background: #888bc2;
+		    text-align: center;
+		    font-size: 20px;
+		    color:#fff;
+		    border: 5px solid #fff;
+		    position: absolute;
+		    top: 10px;
+		    left: -20px;
+		    transition: all 0.3s ease 0s;
+		}
+		#accordion .panel-title a.collapsed:after{
+		    content: "\f067";
+		}
+		#accordion .panel-title a:hover:after,
+		#accordion .panel-title a.collapsed:hover:after{
+		    transform: rotate(360deg);
+		}
+		#accordion .panel-body{
+		    padding: 15px 25px;
+		    background: #fff;
+		    font-size: 20px;
+		    color: #8c8c8c;
+		    line-height: 25px;
+		    border-top: none;
+		    position: relative;
+			border-radius: 30px;
+		}
+				.panel-collapse {
+			border-radius:1000px;
+		}
+
+		body {
+			background: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+		}
+		.img {
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+		}
+		
+				/*隱藏滾動條*/
+html {
+    overflow: -moz-hidden-unscrollable;
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    height: 100%;
+    width: calc(100vw + 18px);
+    overflow: auto;
+}	
+		
+	</style>
+</head>
+<body>
+	
+			<!-- 導覽列 -->	
+<div class="navbar navbar-inverse" role="navigation" style="z-index: 99999; position: fixed ; width: 100%;">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="#">鋼彈介紹</a>
+	</div>
+
+	<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="../02/02.html">由來</a></li>
+				<li><a href="../03/03.html">種類</a></li>
+				<li><a href="../04/04.html">作品</a></li>
+				<li class="active"><a href="../05/05.html">新聞</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+			<!-- 導覽列 -->	
+	
+	<div class="htmleaf-container">
+		<header class="htmleaf-header">
+			<h1></h1>
+		</header>
+		<div class="demo">
+		        <div class="container">
+		            <div class="row">
+		                <div class=" col-md-6">
+		                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		                        <div class="panel panel-default">
+		                            <div class="panel-heading" role="tab" id="headingA">
+		                                <h4 class="panel-title">
+		                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseA" aria-expanded="true" aria-controls="headingA">
+		                                        橫濱18米巨大鋼彈動了！舉手單跪展帥氣
+		                                    </a>
+		                                </h4>
+		                            </div>
+		                            <div id="collapseA" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingA">
+		                                <div class="panel-body">
+											<div class="img">
+											<img src="../img/A1.jpg" width="80%">
+											</div>
+		                                    <p>日本花費好幾年的時間，打造機動戰士鋼彈原型。最近，這個18公尺高的鋼彈機器人，終於自己動起來，它可以舉手，轉動手腕手指，甚至單膝跪地，十分靈活。橫濱的鋼彈主題樂園，也預定在12月開幕。</br>
+
+圍欄開啟，機動戰士鋼彈(Gundam)往前跨兩大步，站定後雙膝微微彎曲，以左腳單膝跪地，接著再站起來，等身體完全站直，鋼彈舉起右手，彎曲肘關節，右手食指指向天空，再把手放下來。整個動作一氣呵成，帥氣十足。</br>
+
+9月18日，日本橫濱鋼彈工廠(Gundam Factory Yokohama)為這個高18公尺、重25公噸的實物大鋼彈，進行動作測試。鋼彈可以執行精細動作，手腕和手指都能靈活轉動，臉部目光也可隨之移動。</br>
+
+不過，鋼彈要獨立行走仍有困難，不論是前進或後退，還必須依靠背後的支撐架給予動力</br>
+
+日本萬代南夢宮娛樂公司(Bandai Namco Entertainment Inc.)花費好幾年的時間，打造鋼彈原型，成為橫濱鋼彈工廠的主打星。測試影片在社交媒體公開後，吸引超過600萬人觀看。
+</br>
+為慶祝《機動戰士鋼彈》40周年，結合娛樂與教育的橫濱鋼彈工廠，原定於今年10月開幕，因為受疫情影響，開幕日期延到12月19日，預定開放至2022年3月。</br>
+		                                </div>
+		                            </div>
+		                        </div>
+
+		                        <div class="panel panel-default">
+		                            <div class="panel-heading" role="tab" id="headingB">
+		                                <h4 class="panel-title">
+		                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseB" aria-expanded="false" aria-controls="collapseB">
+		                                        PG UNLEASHED「RX-78-2 鋼彈」公開完整情報 主打集結40年模型技術大成
+		                                    </a>
+		                                </h4>
+		                            </div>
+		                            <div id="collapseB" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingB">
+		                                <div class="panel-body">
+		                                    <p>提到「RX-78-2 鋼彈」這款經典的鋼彈機體，各種組裝模型也都少不了它的身影，而7日正式公開的「PG UNLEASHED 1/60 RX-78-2 鋼彈 宣傳影片」，也正式揭露這款主打集結40年模型技術大成，以1/60比例再現的最新模型商品。</br>
+										<div class="img">
+											<img src="../img/052-1.jpg" width="80%">
+											</div>
+										最近「RX-78-2 鋼彈」陸續有新商品推出，像是最近在7-ELEVEN搶先上市，主打不用工具不用技巧，只需雙手的「ENTRY GRADE 1/144 RX-78-2鋼彈模型」。</br>
+									而這款「PG UNLEASHED 1/60 RX-78-2 鋼彈」，官方提作為一款累積鋼彈模型40年以來的研究與進化，以「PERFECT GRADE UNLEASHED(PG UNLEASHED)」之名，結合可動、變形、輕易組裝、發光機構、極致細節等技術於一身。</br>
+	為了展現這些技術結合的結晶而採用的「GUNPLA EVOLUTION LINK SYSTEM」，分成「組裝」、「可動」、「構造」、「外裝零件」與「表現效果」五個部分，「組裝」強調採用鋼彈模型史上最大的嵌入式骨架，光是腿部長度就為18公分。</br>
+		<div class="img">
+											<img src="../img/052-2.jpg" width="80%">
+											</div>
+	「可動」則是透過全身94處可動軸，得以自然且流暢地擺出動作。</br>
+<div class="img">
+											<img src="../img/052-3.jpg" width="80%">
+											</div>
+「外裝零件」則是有3種電鍍加工、蝕刻貼片、塑膠金屬貼紙、鋁製頭部火神炮，甚至還有運用磁力機構搭載的武裝。</br>
+「表現效果」則是透過新型RGB LED讓模型兼顧可動性與發光機能，甚至還能看到內藏極小燈具組件的光束軍刀、噴射口發光，與搭載共計53處為鋼彈模型史上最多的整備艙蓋開啟數量。</br>
+
+											</p>
+		                                </div>
+		                            </div>
+		                        </div>
+
+		                        <div class="panel panel-default">
+		                            <div class="panel-heading" role="tab" id="headingC">
+		                                <h4 class="panel-title">
+		                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseC" aria-expanded="false" aria-controls="collapseC">
+		                                        《機動戰士》窪寺昭疑自殺 終年43歲
+		                                    </a>
+		                                </h4>
+		                            </div>
+		                            <div id="collapseC" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingC">
+		                                <div class="panel-body">
+											<div class="img">
+											<img src="../img/053-1.jpg" width="80%">
+											</div>
+		                                    <p>日本放送協會（NHK）14日報導，電視劇兼舞台劇演員窪寺昭昨天逝世，享年43歲。</br>
+
+NHK提到，從現場狀況看來，窪寺的死因疑似自殺。他13日中午過後在東京都中野區的家裡被發現時，已無反應。他立刻被送往醫院，但很快就宣告死亡。</br>
+
+窪寺出身東京，在許多動漫真人版電視劇、電影、舞台劇中演出，包括「假面騎士劍」、「美少女戰士」等。</br>
+
+他曾在電影「機動戰士鋼彈00：因破壞而再生」（Mobile Suit Gundam 00 Re:Build）及「機動戰士鋼彈00：破壞後覺醒」（Mobile Suit Gundam 00 Re:(in)novation）中演出。</br>
+
+窪寺也曾參與演出音樂劇「薄櫻鬼～新選組奇譚～」。</br>
+■防止自殺求助熱線</br>
+生命熱線：2382 0000</br>
+撒瑪利亞防止自殺會：2389 2222</br>
+社會福利署：2343 2255</br>
+明愛向晴軒：18288</br>
+人生熱線：8100 8012</br>
+</p>
+		                                </div>
+		                            </div>
+		                        </div>
+
+		                        <div class="panel panel-default">
+		                            <div class="panel-heading" role="tab" id="headingD">
+		                                <h4 class="panel-title">
+		                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseD" aria-expanded="false" aria-controls="collapseD">
+		                                        國外 YouTuber 神人用木頭雕刻出「鋼彈」作品
+		                                    </a>
+		                                </h4>
+		                            </div>
+		                            <div id="collapseD" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingD">
+		                                <div class="panel-body">
+											<div class="img">
+											<img src="../img/054-1.jpg" width="80%">
+											</div>
+		                                    <p>Woodart Vietnam 是一個網路上相當知名的木雕藝術 YouTube 頻道，經常分享他們利用一塊木頭，雕刻出各式各樣的神作，像幾個月前的海賊王、Kobe Bryant 都超過百萬次觀看，而昨日又再度分享全新神作「鋼彈」，完全讓人佩服的五體投地，每個細節都雕刻得相當精細，就連臉部也是。雖然影片名稱叫「如何製作木頭機器人」，但我相信即便看完，應該也沒什麼人知道怎麼，難度太高了。</br>
+										Woodart Vietnam 這次鋼彈木雕選用一整塊的「桃花心木（Mahagony wood）」，一開始他們先用奇異筆，把鋼彈的外型畫上：</br>
+									<div class="img">
+											<img src="../img/054-2.png" width="80%">
+											</div>
+									接著用工業切割工具，把形狀給切出來：</br>
+<div class="img">
+											<img src="../img/054-3.png" width="80%">
+											</div>
+再來用電鋸修整，把外圍大面積區域雕成要的形狀，真的很專業，每個步驟都相當俐落：</br>
+<div class="img">
+											<img src="../img/054-4.png" width="80%">
+											</div>
+而開始細部雕刻前，也先用奇異筆把圖案畫出來：</br>
+<div class="img">
+											<img src="../img/054-5.png" width="80%">
+											</div>
+然後再一個個區塊雕刻：</br>
+<div class="img">
+											<img src="../img/054-6.png" width="80%">
+											</div>
+武器、盾牌當然也不能少，這兩個就使用額外的小木頭製作：</br>
+<div class="img">
+											<img src="../img/054-7.png" width="80%">
+											</div>
+最終完成品，看完讓人超想入手阿！：</br>
+<div class="img">
+											<img src="../img/054-8.png" width="80%">
+											</div>
+</p>
+		                                </div>
+		                            </div>
+		                        </div>
+
+		                        <div class="panel panel-default">
+		                            <div class="panel-heading" role="tab" id="headingE">
+		                                <h4 class="panel-title">
+		                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseE" aria-expanded="false" aria-controls="collapseE">
+		                                        鋼彈體感筐體對戰遊戲新作《機動戰士鋼彈 戰場之絆 II》正式發表
+		                                    </a>
+		                                </h4>
+		                            </div>
+		                            <div id="collapseE" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingE">
+		                                <div class="panel-body">
+											<div class="img">
+											<img src="../img/053-1.jpg" width="80%">
+											</div>
+		                                    <p>BANDAI NAMCO Amusement 今（8）日在國際展示場舉辦的大型電玩娛樂機台展「JAEPO 2020）」中宣布，將製作大型電玩體感筐體對戰遊戲《機動戰士鋼彈 戰場之絆》的新作《機動戰士鋼彈 戰場之絆 II》。</br>
+											<div class="img">
+											<img src="../img/055-1.jpg" width="80%">
+											</div>
+　《機動戰士鋼彈 戰場之絆》是 2006 年 11 月推出、以《機動戰士鋼彈》為題材的大型電玩體感筐體對戰遊戲，採用擬真的球型駕駛艙框體，透過半球型投影螢幕提供縱橫 180 度的寬闊視野，透過雙操作感與雙踏板重現原作操作，支援 8 對 8 遠端連線大規模組隊對戰玩法。推出後以臨場感十足的魄力體驗獲得熱烈回響。</br>
+																	<div class="img">
+											<img src="../img/055-2.jpg" width="80%">
+											</div>			
+									在歷經 13 年的營運之後，本次官方終於宣布將製作續作《機動戰士鋼彈 戰場之絆 II》，不過目前僅公布標題與一支預告影片，尚未揭露具體內容與推出時間。先前《機動戰士鋼彈 戰場之絆》曾推出過以 HTC Vive 虛擬實境頭戴裝置替代半球型投影螢幕的《VR 原型版》，目前還未確定《II》的筐體會採用何種設計。</br>
+</p>
+		                                </div>
+		                            </div>
+		                        </div>
+
+
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+	</div>
+	
+	
+	<!-- 導覽列 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- 導覽列 -->
+	<script>
+		$(function(){
+				var getblurContent = $(".content");
+				var pagecopy = getblurContent.clone(true);
+				var blurryContent = $(".blurViewport .content-wrap");
+				var blurryContentViewport = $(".blurViewport");
+				blurryContent.append(pagecopy);
+
+			$(window).scroll(function(){
+        blurryContentViewport.scrollTop(window.pageYOffset);
+    	});
+		});
+
+		</script>
+	
+	</body>
+</html>

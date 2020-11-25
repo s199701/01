@@ -1,0 +1,887 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>鋼彈種類</title>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+	<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+		
+	<!-- 導覽列 -->
+	
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<![endif]-->
+		<style type="text/css">
+	.navbar-brand{
+		display: inline-block;
+		width: 150px;
+	}
+	@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}				  	/* 導覽列 */		.card{
+    width: 250px;
+    height: 325px;
+    text-align: center;
+	float:left;
+		}
+		.btn {
+    width: 150px;
+    height: 35px;
+    border-radius: 50px;
+    background: linear-gradient(to right, #93291E, #ED213A);
+    text-align: center;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+	text-decoration:none; 
+	color: #FFFFFF;
+		}
+		.AA {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+		}
+		.BB {
+    text-align: center;
+		}
+		.BB img {
+			width: 70%;
+		}
+		.CC {
+    padding-top: 10%;
+		}
+		.DD {
+			height:280px;
+			display: flex; 
+    justify-content: center; 
+    align-items: center; 
+		}
+		
+		/*隱藏滾動條*/
+html {
+    overflow: -moz-hidden-unscrollable;
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    height: 100%;
+	width: calc(100vw + 18px);
+	overflow: auto;
+}	
+		/*動畫*/
+	.animated-modal {
+    max-width: 800px;
+    border-radius: 4px;
+    overflow: hidden;
+    transform: translateY(-50px);
+    transition: all .7s;
+    text-align: justify;
+}
+
+.animated-modal img,
+.animated-modal hr,
+.animated-modal h2,
+.animated-modal p {
+  transform: translateY(-50px);
+  opacity: 0;
+  
+  transition-property: transform, opacity;
+  transition-duration: .4s;
+}
+
+/* Final state */
+.fancybox-slide--current .animated-modal,
+.fancybox-slide--current .animated-modal img,
+.fancybox-slide--current .animated-modal hr,
+.fancybox-slide--current .animated-modal h2,
+.fancybox-slide--current .animated-modal p {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Reveal content with different delays */
+.fancybox-slide--current .animated-modal img {
+  transition-delay: .1s;
+}
+.fancybox-slide--current .animated-modal hr {
+  transition-delay: .2s;
+}
+.fancybox-slide--current .animated-modal h2 {
+  transition-delay: .3s;
+}
+
+.fancybox-slide--current .animated-modal p {
+  transition-delay: .4s;
+}
+	</style>
+	
+</head>
+
+<body style="background: linear-gradient(to right, #870000, #190a05);">
+		
+			<!-- 導覽列 -->	
+<div class="navbar navbar-inverse" role="navigation" style="z-index: 99999; position: fixed; width: 100%;">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="#">鋼彈介紹</a>
+	</div>
+
+	<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="../02/02.html">由來</a></li>
+				<li class="active"><a href="../03/03.html">種類</a></li>
+				<li><a href="../04/04.html">作品</a></li>
+				<li><a href="../05/05.html">新聞</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+			<!-- 導覽列 -->	
+	
+<div class="CC">
+	
+<div class="AA"> 
+<h2 style="color: #FFFFFF;">鋼彈0079</h2>
+
+<hr class="my-5" />
+	
+<div class="row mb-4">
+	
+
+    <div class="card">
+		<div class="DD">
+		<img src="../img/RX-78-2.jpg" width="180px">
+		</div>
+		
+		<div type="button" class="mb-0">
+          <a data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" class="btn btn-primary">RX-78-2</a>
+        </div>
+
+        <div style="display: none;" id="animatedModal" class="animated-modal">
+			<div class="BB">
+		  <img src="../img/RX-78-2.jpg">
+			</div>
+			<hr class="my-5" />
+          <h2>RX-78-2</h2>
+          <p>由米諾夫斯基博士的門生提姆·雷所主導開發的MS，在米諾夫斯基博士逃至聯邦後，加裝了新技術所開發的具戰艦主砲出力等級的光束步槍跟將米氏粒子磁性約束在限定範圍所形成的光束軍刀（通稱光劍），採用新的合金技術所造的月神鈦裝甲可以輕易擋下一般薩克所使用的機槍，在Side7開發接近終結時原型機被夏亞所帶領的小隊發現，原試飛乘員死亡，開發者提姆·雷被捲入戰鬥吹出殖民地外，在誤打誤撞下提姆·雷博士的兒子阿姆羅·雷乘上鋼彈二號機，由於其潛在的新人類（新人類）質素，經過數次戰鬥都有傑出表現，被稱為聯邦的白色惡魔，聯邦軍也利用鋼彈所得到的資料開發決戰主力用的量產型鋼彈（通稱GM，吉姆），在一年戰爭最後阿．巴瓦．空的決戰中，阿姆羅所駕駛的鋼彈跟夏亞所駕駛的Zeong（吉翁克）互擊全毀（劇場版<a href="https://zh.wikipedia.org/wiki/%E6%A9%9F%E5%8B%95%E6%88%B0%E5%A3%ABGUNDAM" title="機動戰士鋼彈">機動戰士鋼彈</a> III 相逢宇宙篇）。 </p>
+          <p>在一年戰爭中，聯邦軍生產的RX-78共有8機（不計算外傳的聯邦空軍獨自生產的RX-78E（GT FOUR/Gundam   Transformer/Flight &amp; Operations Unifications   Reactors）可變型飛行任務特化反應機和RX-78XX）。RX-78-1~3在初期生產第一梯次三機，是為一號機至三號機，第二梯次為四號機至六號機，第三梯次為七號機和八號機（終戰前未被完成）。第二第三梯次生產時，並沒有特別以RX-78-4~8的裝備方式生產，而是在生產後才因為加裝的裝備而有RX-78-4~8的編號。 </p>
+          <p>值得留意的是，RX-78 NT-1在RX-78-4正式出現之前被設定為鋼彈的四號機。而為了釐補RX-78-4正式出現後的設定上的漏洞，RX-78 NT-1、RX-78E(GT FOUR)和RX-78-4設定為一年戰爭中聯邦軍部各自同時開發的鋼彈四號機之一。 </p>
+          <p>在富野所寫的小說中，一年戰爭後有夏亞所開的卡斯巴爾專用鋼彈RX-78/C.A.（也是紅色）。此機型雖然外表是RX-78，但是內部已經由吉翁的工程師重新設計，所以是混合了兩軍的最高技術成品，性能上超越RX-78-2。 </p>
+        </div>
+    </div>
+	
+    <div class="card">
+		<div class="DD">
+		<img src="../img/MS-05.jpeg" width="180px">
+		</div>
+		
+		<div type="button" class="mb-0">
+          <a data-fancybox data-animation-duration="700" data-src="#A" href="javascript:;" class="btn btn-primary">MS-05</a>
+        </div>
+
+        <div style="display: none;" id="A" class="animated-modal">
+			<div class="BB">
+		  <img src="../img/MS-05.jpeg">
+			</div>
+			<hr class="my-5" />
+          <h2>MS-05</h2>
+          <p>MS-05由吉翁公國最大的MS生產機構吉翁尼克社《參見：<a href="https://gundam.fandom.com/zh/wiki/%E5%AE%87%E5%AE%99%E4%B8%96%E7%B4%80%E4%BC%81%E6%A5%AD" title="宇宙世紀企業">宇宙世紀企業</a>》研製，是在研製了MS-01~MS-04諸種技術驗證機之後，吉翁公國第一種實際意義上的機動戰士。系列第一種產品MS-05A沒有進入量產，實際量產型號是MS-05B。在生產了793架B型之後，由於性能上的局限，MS-05被其技術上的後繼機種MS-06 薩克II替代。之後稱為薩克的機體泛指06系列，05則被稱為舊薩克 </p>
+          <p>吉翁早期的著名機師，包括「黑色三連星」、艾力克·曼斯菲爾德上校及賈比·哈薩德中校、卡提姆艦長都駕駛過MS-05參加戰鬥。 </p>
+        </div>
+    </div>
+
+
+	
+	    <div class="card">
+		<div class="DD">
+		<img src="../img/MS-06.jpg" width="180px">
+			</div>
+		
+		<div type="button" class="mb-0">
+          <a data-fancybox data-animation-duration="700" data-src="#B" href="javascript:;" class="btn btn-primary" style="">MS-06</a>
+        </div>
+
+        <div style="display: none;" id="B" class="animated-modal">
+			<div class="BB">
+		  <img src="../img/MS-06.jpg">
+			</div>
+			<hr class="my-5" />
+          <h2>MS-06</h2>
+          <p>吉翁公國在其第一種實用型機動戰士薩克I（MS-05）於一年戰爭中投入使用後，在初期的戰鬥中取得了很大成果。然而由於MS-05在機動性和裝甲防護方面的顯著弱點，設計者早在一年戰爭爆發前就開始研發性能更為優越的機動戰士。在充分吸收MS-05現有技術的基礎上，以MS-06為編號的新型機體的開發計劃順利進行，計劃於0078年1月進入生產。 </p>
+          <p>MS-06的基本開發思想是「廣泛多用途型機動戰士」和「區域戰用機動戰士」。這決定了它的高度泛用性的特點，從而使之成為一年戰爭中最成功的量產型MS。 </p>
+          <p>MS-06的第一種量產型號是有防輻射裝甲的MS-06C。在少量生產並服役之後，由於吉翁與地球聯邦簽署禁止使用NBC武器的南極條約，MS-06C即宣告停產。取消了防輻射裝甲的MS-06F取代C型成為吉翁的主力量產機，它比C型具有更好的機動性。MS-06F實際成為吉翁軍在整個一年戰爭時期的制式裝備，後續的各型號幾乎都只是針對某些方面對F型進行有限改進而成。其中的重要型號MS-06J即是專用於在地球作戰的F型，針對重力條件加以修正。在一年戰爭後期，為了對抗聯邦軍性能優越的機動戰士，吉翁尼克社（參見：<a href="https://gundam.fandom.com/zh/wiki/%E5%AE%87%E5%AE%99%E4%B8%96%E7%B4%80%E4%BC%81%E6%A5%AD" title="宇宙世紀企業">宇宙世紀企業</a>）開發出性能有較大提高的MS-06F2。在F2型基礎上產生了F型的最後量產型號MS-06Fz。 </p>
+          <p>在一年戰爭結束後，地球聯邦軍接收了吉翁軍大量的MS-06系列產品，包括F和F2型。這些機體被廣泛用於軍隊的對抗演習、技術驗證機和教練機，也是一些基地的防衛用MS。而吉翁的殘餘力量，包括在0083年活躍的迪拉茲艦隊，也擁有大量的MS-06系機體。 </p>
+          <p>在迪坦斯時代，迪坦斯重新拾起了MS-06的核心技術，開發出繼承了薩克系列思想的RMS-106型高薩克。 </p>
+          <p>吉翁的許多著名機師曾經駕駛過MS-06系列機體作戰。它也是OVA機動戰士鋼彈0080 口袋裡的戰爭中男主角巴尼的座機，巴尼駕駛的MS-06Fz是第一個也是唯一一架的重創過RX-78系列機體的量產MS。 </p>
+        </div>
+    </div>
+
+
+
+    <div class="card">
+		<div class="DD">
+		<img src="../img/MS-07.jpg" width="180px">
+		</div>
+		
+		<div type="button" class="mb-0">
+          <a data-fancybox data-animation-duration="700" data-src="#C" href="javascript:;" class="btn btn-primary" style="">MS-07</a>
+        </div>
+
+        <div style="display: none;" id="C" class="animated-modal">
+			<div class="BB">
+		  <img src="../img/MS-07.jpg">
+			</div>
+			<hr class="my-5" />
+          <h2>MS-07</h2>
+          <p>MS-07系列機動戰士，代號古夫（拉丁字母：Gouf／日語：グフ）是使用UC紀元世界觀的動畫鋼彈系列作品中出現的一種虛構兵器。 </p>
+          <p>在一年戰爭初期，地球聯邦軍並沒有動戰士，吉翁公國因而將其制式裝備MS-06 薩克Ⅱ的換裝時間大為推遲。此後一段時期內，吉翁軍陸上力量並無新式MS服役，所用兵器大抵為陸戰型薩克Ⅱ（MS-06J）及其變種而已。然而此後不久，在與鋼彈進行的激烈戰鬥中，吉翁公國發現薩克Ⅱ的性能已經落後，開始尋求一種更有戰鬥力的地面用MS（薩克Ⅱ的開發初衷是宇宙用MS）。於是幾種緊急MS性能提高方案即被拿上議程。在這種情況下，吉翁最大的MS製造企業吉翁尼克社(Zeonic)的工程師們，推出了他們設計的一種新型陸戰專用MS－古夫來代替薩克Ⅱ。 </p>
+          <p> </p>
+        </div>
+    </div>
+
+
+
+    <div class="card">
+		<div class="DD">
+		<img src="../img/MS-09.jpg" width="180px">
+		</div>
+		
+		<div type="button" class="mb-0">
+          <a data-fancybox data-animation-duration="700" data-src="#D" href="javascript:;" class="btn btn-primary" style="">MS-09</a>
+        </div>
+
+        <div style="display: none;" id="D" class="animated-modal">
+			<div class="BB">
+		  <img src="../img/MS-09.jpg">
+			</div>
+			<hr class="my-5" />
+          <h2>MS-09</h2>
+          <p>在一年戰爭開戰數個月後，吉翁公國發現他們的主力機動戰士MS-06薩克雖然在宇宙環境中發揮了令人生畏的威力，但在地球戰場的全重力環境中卻陷入了困境。在地球的重力作用下，MS的巨大重量使它們移動緩慢，結果成為地球聯邦軍數量上占絕對優勢的傳統兵器的活靶子。為了扭轉這種局勢，吉翁公國的軍需企業Zimmad社《參見：<a href="https://gundam.fandom.com/zh/wiki/%E5%AE%87%E5%AE%99%E4%B8%96%E7%B4%80%E4%BC%81%E6%A5%AD" title="宇宙世紀企業">宇宙世紀企業</a>》開始發展一種新型機動戰士，它必須具有比MS-06更優良的地面機動性。利用從MS-07C-5 古夫試作實驗機獲得的數據，索伊曼德/茲瑪德社的工程師們開發了MS-09 德姆。 </p>
+        </div>
+    </div>
+
+  </div>
+</div>
+	
+<div class="AA"> 
+<h2 style="color: #FFFFFF;">鋼彈MS-08小隊</h2>
+
+<hr class="my-5" />
+	
+<div class="row mb-4">
+	
+
+    <div class="card">
+		<div class="DD">
+		<img src="../img/RX-79G 陸戰.jpg" width="180px">
+		</div>
+		
+		<div type="button" class="mb-0">
+          <a data-fancybox data-animation-duration="700" data-src="#animatedModal2" href="javascript:;" class="btn btn-primary">RX-79G 陸戰</a>
+        </div>
+
+      <div style="display: none;" id="animatedModal2" class="animated-modal">
+			<div class="BB">
+		  <img src="../img/RX-79G 陸戰.jpg">
+			</div>
+			<hr class="my-5" />
+        <h2>RX-79G 陸戰</h2>
+        <p>在對抗吉翁軍新銳兵器機動戰士的V作戰計劃的成果RX-78-2 GUNDAM開發成功後，為了便於對這部實驗性質的機體進行調試和檢測，聯邦軍致力於生產機動戰士的組件。但由於對RX-78性能的苛刻要求，部件生產線受到了嚴格的質量控制，許多部件生產出來以後不能通過質量檢測。後來一來為了不讓這些不合格部件被浪費，二來由於白色基地號下落不明因而喪失MS的戰鬥資料獲得機會，三來前線屢屢要求盡速運送MS至第一線戰場來調整，聯邦軍的工程師提出利用庫存中的多餘部件設立一條新的生產線，製造所謂「先行量產型GUNDAM」（ガンダム量産検討機）。RX-79G因此產生。RX-79G對於後來GM系的大量生產也具有重大意義，因為對RX-78的許多複雜部分的簡化概念就是在這時產生的。 </p>
+          <p>RX-79G由RX-78的不合格部件組裝而成，再加上生產的目的為提供MS資料，因而數量只有寥寥二十幾台。相對RX-78來說其性能是大幅縮水。高成本部件絕大部分被取消，但裝甲保留了RX-78所使用的月神鈦合金，因而其防禦能力依然強于吉翁軍大部分MS。後背加裝了一個大型貨櫃裝置，為了提高機動性能採用了小型的非固定盾（手持）。 </p>
+          <p>投入實戰的RX-79G被稱為「RX-79[G] 陸戰GUNDAM」，有12台被分配給了08MS小隊中主人公所屬的東南亞機械化混合大隊進行測試和研究。由於裝配用零件的非標準化，前線又無法提供替換部件（另有一說：因為本機用的是RX-78的剩餘零件組合而成，並沒有多餘的零件可供替換），於是各基地只好用結構相似的RGM-79的零件來解決戰損問題，以至出現劇中卡蓮機被戲稱為「吉姆頭」的事件。後來更出現了改良型的Ez8與及作為EXAM系統測試機的藍色命運系列。 </p>
+        </div>
+    </div>
+	
+    <div class="card">
+		<div class="DD">
+		<img src="../img/Ez-8.jpg" width="180px">
+		</div>
+		
+		<div type="button" class="mb-0">
+          <a data-fancybox data-animation-duration="700" data-src="#A2" href="javascript:;" class="btn btn-primary">Ez-8</a>
+        </div>
+
+        <div style="display: none;" id="A2" class="animated-modal">
+			<div class="BB">
+		  <img src="../img/Ez-8.jpg">
+			</div>
+			<hr class="my-5" />
+          <h2>Ez-8</h2>
+          <p>本機是以與阿普薩拉斯Ⅱ戰鬥後大破的RX-79[G]為原型使用預備部件進行修復、改良後所得到的機體，因此當時是只此一機、別無分號。 Ez-8是 “Extra Zero 8”的縮寫。與RX-79[G]相比，本機追加的裝甲提高了機體的耐彈性；同時機體本身進行了輕量化處理；廢除了RX-79[G]胸部原有的機關炮，代之以對步兵用的12.7mm迴旋式機槍。本機沒有GUNDAM型機體所特有的“V”型天線。駕駛該機的西羅·亞瑪達少尉在連續與MS-07B-3及阿普薩拉斯Ⅲ激戰後，機體被大破。</p>
+<p>08MS小隊則成為唯一一支未被全滅的原屬遠東MS小隊！ Ez-8也成為好運的代名詞，Ez-8正式成為一種MS型號改良並有小量生產配給於MS隊長。主要有RX-79Ez-8/HAC，即Gundam Ez-8重裝型和RX-79Ez-8/HMC，即Gundam Ez-8高機動型。 （GBA SD高達G世紀有出場）</p>
+        </div>
+    </div>
+
+
+	
+	    <div class="card">
+		<div class="DD">
+		<img src="../img/RGM-79G 陸戰型.jpg" width="180px">
+		</div>
+		
+		<div type="button" class="mb-0">
+          <a data-fancybox data-animation-duration="700" data-src="#B2" href="javascript:;" class="btn btn-primary" style="">RGM-79G 陸戰型</a>
+        </div>
+
+        <div style="display: none;" id="B2" class="animated-modal">
+			<div class="BB">
+		  <img src="../img/RGM-79G 陸戰型.jpg">
+			</div>
+			<hr class="my-5" />
+          <h2>RGM-79G 陸戰型</h2>
+          <p>一年戰爭爆發後，地球聯邦緊急進行MS開發計畫，其中包括了量產型GM，以及被稱為勝利關鍵的［V作戰計畫］，其中V作戰延續了聯邦的RX計畫，生產了實驗型機種RX-78的一號機與二號機。聯邦希望以V計畫的研究與實驗數據，作為量產型GM的重要參考資料。</p>
+
+<p>可惜此機密行動仍被吉翁的夏亞察覺，並襲擊位於SIDE 7殖明地衛星的實驗基地，RX-78-1機體被毀，RX-78-2 Gundam被迫緊急啟動，所有研究資料遺散，主要工程人員也被害與失蹤。</p>
+
+<p>在此不利情況下，為了MS部隊的編成，聯邦只得被迫緊急建造GM的先行量產型的前期型，以致草率成軍的GM功能欠佳，無法發揮實際戰力。</p>
+
+
+<p>到了大戰中期，由於RX-78-2 Gundam屢建戰果，聯邦也逐步獲得了Gundam的實戰資料，便已RX-78的次級零件來生產Gundam量產機RX-79。</p>
+
+
+<p>這裡要特別說明的是，由於RX-78生產時要求規格極高，即使是次級零件，也是當時相當高水準的產品，加上聯邦的生產線趨於穩定，因此陸戰型的RX-79 Gundam在地球戰場上發揮了相當大的效益。
+
+
+<p>RX-79陸戰型鋼彈計畫完成後，聯邦馬上進行更改設計，量產了RGM-79[G]陸戰型GM。</p>
+        </div>
+    </div>
+
+
+
+    <div class="card">
+		<div class="DD">
+		<img src="../img/MS-07H-8.jpg" width="180px">
+		</div>
+		
+		<div type="button" class="mb-0">
+          <a data-fancybox data-animation-duration="700" data-src="#C2" href="javascript:;" class="btn btn-primary" style="">MS-07H-8</a>
+        </div>
+
+        <div style="display: none;" id="C2" class="animated-modal">
+			<div class="BB">
+		  <img src="../img/MS-07H-8.jpg">
+			</div>
+			<hr class="my-5" />
+          <h2>MS-07H-8</h2>
+          <p>虽然由于MS-07H-4飞行试验型古夫的试验事故，吉恩军军部暂停了关于MS的飞行试验，但是一些非官方的大气层内飞行MS开发计划仍在暗中进行，其中就包括了在东南亚秘密基地中研发阿普撒拉斯的基尼亚斯·萨哈林技术少将。</p>
+<p>得到了MS-07H-4技术资料的萨哈林少将，继承MS-07H-4型的设计思想，利用两台MS-07A 老虎，开发出两架改良型的MS-07H-8飞行型古夫（Gouf Flight Type），希望让这种H-8型古夫成为阿普萨拉斯Ⅲ的护卫机</p>
+          <p> </p>
+        </div>
+    </div>
+
+
+
+    <div class="card">
+		<div class="DD">
+		<img src="../img/MS-07B-3.jpg" width="180px">
+		</div>
+		
+		<div type="button" class="mb-0">
+          <a data-fancybox data-animation-duration="700" data-src="#D2" href="javascript:;" class="btn btn-primary" style="">MS-07B-3</a>
+        </div> 
+
+        <div style="display: none;" id="D2" class="animated-modal">
+			<div class="BB">
+		  <img src="../img/MS-07B-3.jpg">
+			</div>
+			<hr class="my-5" />
+          <h2>MS-07B-3</h2>
+          <p>設計人員採用了更高出力的噴氣式引擎，並在背部和腰部加裝了可動式平衡翼，對空中姿態的調節能力也進行了提升，這使得H-8在歷代試作機中具備了最穩定的飛行能力。但推進劑容量和冷卻方面的問題依然沒有得到解決，因此飛行時間受到了極大的限制。此外，由於引擎並不防水，所以在熱帶雨林戰場和水面附近作戰時劣勢非常明顯。</p>
+<p>H-8型的肩部設計沿用了H-4型的飛行用翼狀肩甲，擴大了背部噴射背包的容量和功率，加強的腰部推進器的功率和安定性，加大飛行翼的面積，腰部追加可動式安定翼，將小腿部發動機換成技術更加成熟的大推力熱核引擎，並且還擴大了小腿裝甲以增加內部的容量。</p>
+<p>MS-07H-8</p>
+<p>功率更大更安全的發動機、面積更大的飛行穩定翼、更好的飛行操控性和穩定性、更多用於儲存推進劑和冷卻劑的空間，讓H系列的古夫又獲得了新生。考慮到機體的泛用性提升以及受MS統合計劃的影響，H-8型擯棄了古夫系列的ZMP-54F型5連裝75​​mm指部機關炮，改用了傳統的MS制式機械手，這樣更方便維修及零件共用，也增加了能夠更好持握武器的功能。</p>
+        </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="AA"> 
+<h2 style="color: #FFFFFF;"> 鋼彈0083</h2>
+
+<hr class="my-5" />
+	
+<div class="row mb-4">
+	
+
+    <div class="card">
+		<div class="DD">
+		<img src="../img/RX-78GP00.jpg" width="180px">
+		</div>
+		
+		<div type="button" class="mb-0">
+          <a data-fancybox data-animation-duration="700" data-src="#animatedModal3" href="javascript:;" class="btn btn-primary">RX-78GP00</a>
+        </div>
+
+      <div style="display: none;" id="animatedModal3" class="animated-modal">
+			<div class="BB">
+		  <img src="../img/RX-78GP00.jpg">
+			</div>
+			<hr class="my-5" />
+        <h2>RX-78GP00</h2>
+        <p>GP00是一部在01~04設計前的第一部GP系列機體。這機體設計時，概念是把GP系列的全部特點都加到一部機體上面。此機體同時要求陸地戰及宇宙戰能力，同時可以近距離格鬥戰以及強襲型一擊脫離戰法，又要可以裝備重火力來防衛據點，又要裝備I-Field來防禦光束兵器，亦需要有核戰機作為駕駛員逃生以及帶備比駕駛員更寶貴的機體資料回航。所以，如果此機體成功的話，01~04就不會被設計。但是，此機體在最初只裝備大型光束步槍，綜合型感應器及核戰機的情況下，就已經被破壞，證明了一部機體不可能同時有著那麼多的能力。
+<p>GP計畫除了GP01-04四機是A.E社專門為開發的以外，另外還有一部A.E社獨立秘密開發的GP計畫機體：GP-00。GP-00是A.E社背者聯邦軍開發的技術驗證機，屬於MS開發過渡期的作品，同時也被認為是AE最全能的一機，完全是A.E社「高、大、全」的另一表現。RX-78 鋼彈GP00「堡蘿森」，英文為Blossom，為果樹之花的意思。花語：「開始」。GP-00還是採用了核心戰鬥機系統，包括FF-XⅡ[00]核戰機脫出系統、多重向量噴嘴、全景式駕艙精度光學儀器、背部AMBAC（活動平衡自動控制）、專用的BOOSTER SYSTEM及狂彪裝置，以恐怖的推進力著稱。但是由於當時的技術限制，GP-00的很多性能還是不穩定的，作業系統很差。有資料提供此機在參加巡邏任務時與薩梅爾部隊戰鬥被嚴重損壞。將回收到的珍貴資料的分析結果是，追求多方面性能的結果是導致駕駛員負擔過重，之後研製1~4號機就採用追求單一性能的極限。
+
+<p>此機體如何被破壞則是有數種說法：
+
+<p>在Phantom Bullet（最初出現此機體的外傳故事）中如此說：
+
+    和吉翁殘黨軍作戰時被破壞。</p>
+
+<p>在電擊Hobby雜誌的"Gundam Secret Weapons"中如此說：
+
+   撞到一艘破棄的艦隻的殘骸。</p>
+
+<p>在Gundam Wars卡片遊戲（第一次在官方承認的地方出現並有公式設定圖片）如此說：
+
+    因為太多的裝備令機體失去平衡度，所以在測試時自毀。
+</p>
+<p>沒有任何證據證明任何一個說法是比另一個說法更正確，但其實這三個說法並沒有互相抵觸，所以混合起來的說法可能是：
+
+    在一次測試時，GP00遇到了吉翁殘黨軍而被逼進入作戰（就像GP03在Gundam Evolve第4集中那樣）。在作戰時，因為太多的裝備令機體失去平衡度而失控。而在失控後，此機體撞進了一艘破棄艦隻的殘骸中被破壞。</p>
+
+        </div>
+    </div>
+	
+    <div class="card">
+		<div class="DD">
+		<img src="../img/RX-78GP01.jpg" width="180px">
+		</div>
+		
+		<div type="button" class="mb-0">
+          <a data-fancybox data-animation-duration="700" data-src="#A3" href="javascript:;" class="btn btn-primary">RX-78GP01</a>
+        </div>
+
+        <div style="display: none;" id="A3" class="animated-modal">
+			<div class="BB">
+		  <img src="../img/RX-78GP01.jpg">
+			</div>
+			<hr class="my-5" />
+          <h2>RX-78GP01</h2>
+          <p>RX78-GP01是以RX-78 鋼彈系列為基礎加以修改，以求取得汎用人形機動兵器的極限性能。由亞納海姆電子產業聯合體先進開發事業部負責。在鋼彈開發計畫開始之後的兩年，宇宙世紀0083年9月29日於馮·布朗市出廠。原訂由亞納海姆社所屬的測試駕駛員尼爾·格雷斯曼擔任試飛員，但由於尼爾在反應爐測試中發生意外而喪生，才臨時決定由聯邦軍駕駛員中挑選試飛員。</p>
+
+<p>本機體繼一年戰爭中聯邦軍的V作戰三機體（即RX-78 鋼彈等）之後，也為了提高駕駛員生存性，便於回收實戰資料以及增加汎用性等原因而配備了核戰機。為了驗證隨之而來的機體剛性下降，重量增加等問題，構成GP01駕駛艙模組的核戰機II（編號FF-XII）相對RX-78的核戰機而言大幅度提昇了性能。與本體的組合方式也從RX-78的垂直型變成水平型，核戰機II在作為駕駛艙模組時駕駛艙與機鼻部份往下折曲置於機身與引擎之下。因此核戰機的本身的發動機，進氣冷卻系統與噴射系統，武裝等也可在組合型態時加以運用。</p>
+
+<p>另外GP01武裝的一項主要改進是光束步槍開始使用可拋棄的彈匣（E-PACK，可替式MEGA粒子莢）而非內藏式。此設計可減輕光束步槍的重量並且讓戰場補給得以迅速進行。GP01標準出擊裝備中除了步槍上的彈匣外，尚有兩個備用彈匣位於盾牌內側。</p>
+
+<p>「傑菲蘭沙斯」"ZEPHYRANTHES"的代號來自於中文俗稱"蔥蘭"或"韭蘭"或"風雨蘭"的石蒜科玉簾屬植物之屬名，英文俗名為Rain Lily，花語為「清純的愛」</p>
+        </div>
+    </div>
+
+
+	
+	    <div class="card">
+		<div class="DD">
+		<img src="../img/RX78-GP02A.jpg" width="180px">
+		</div>
+		
+		<div type="button" class="mb-0">
+          <a data-fancybox data-animation-duration="700" data-src="#B3" href="javascript:;" class="btn btn-primary" style="">RX78-GP02A</a>
+        </div>
+
+        <div style="display: none;" id="B3" class="animated-modal">
+			<div class="BB">
+		  <img src="../img/RX78-GP02A.jpg">
+			</div>
+			<hr class="my-5" />
+          <h2>RX78-GP02A</h2>
+          <p>RX78-GP02A是於鋼彈 0083中登場，地球聯邦軍的試作型強襲用核攻擊型機動戰士。開發代號為「賽薩里斯」PHYSALIS（中文解釋「酸漿」或「苦蘵」，一種茄科植物。）其花語為「欺騙」。</p>
+
+<p>GP02A的開發構想為攻擊力重視的強襲型MS，而為了達到該構想，純綷的以"最強"為代名詞的核武便成為了其設計基本。</p>
+
+<p>GP02A的開發是由亞納海姆電子產業聯合體第二研究事業部負責。這個部門由於吸收了許多吉翁系MS的設計者，所以最初的開發成果有許多地方反映了DOM系列的設計思想。也因此GP02的外觀與RX-78系列有很大的不同。另外以GP02的技術為基礎所開發的Rick DIAS系列等第二世代MS也與GP02有相似之處。在開發第二階段將外觀修正成更接近RX-78系列的樣子，再經過第三階段耐核爆裝備的設置，於0083年9月18日出廠。並運送至澳洲特林頓基地進行地面測試。</p>
+
+<p>由於米諾夫斯基粒子散布下的戰場無法使用無線導引，所以本機體被設計為接近目標後發射無導引的火箭彈，並且裝設了大型散熱盾牌，裝甲與駕駛艙等也以耐熱耐衝擊為優先考量。而為了增加機動力以及不干涉核彈頭收納模組，噴射系統從背包部移動至肩部加以特化並加強推力，使GP02A在地面也能浮行。同時肩部推進模組也與GP-01Fb相同，可作為AMBAC系統的動作肢體，可在1.1秒之內轉身180度。腳部由於無法被散熱盾牌充分保護，所以有單獨的冷卻系統與裝甲。</p>
+
+<p>GP02A最重要的武裝：核子火箭砲在使用時會將收納在背包內的Mk-82核彈頭移動至右肩的發射機構內，並將散熱盾內收納的砲身與發射機構接合形成完整的火箭砲。該彈頭雖然被分類為戰術核彈，但是卻擁有戰略核彈等級的威力。而為了承受近距離核爆的威力，大型散熱盾當中設置有液態氮冷卻機構。</p>
+
+<p>阿納貝爾·卡多在奪取GP02A之後於孔貝島襲擊聯邦觀艦式成功，在歸隊時與GP01-Fb交戰而雙雙破壞。 </p>
+        </div>
+    </div>
+
+
+
+    <div class="card">
+		<div class="DD">
+		<img src="../img/RX-78GP03.jpg" width="180px">
+		</div>
+		
+		<div type="button" class="mb-0">
+          <a data-fancybox data-animation-duration="700" data-src="#C3" href="javascript:;" class="btn btn-primary" style="">RX-78GP03</a>
+        </div>
+
+        <div style="display: none;" id="C3" class="animated-modal">
+			<div class="BB">
+		  <img src="../img/RX-78GP03.jpg">
+			</div>
+			<hr class="my-5" />
+          <h2>RX-78GP03</h2>
+          <p>RX-78GP03是於鋼彈 0083中登場，地球聯邦軍的試作型宇宙據點防衛用機動兵器。開發代號為「典多洛比姆」Dendrobium（中文解釋「石斛蘭」）其花語為「任性的美人」。本機在一部份遊戲與設定集中被稱為GP03D，但官方仍以GP03為標準稱呼。在0083的強襲，阻止臨界點中活躍。為浦木宏的後期駕駛機。
+
+<p>本機體的設計概念是「兼具有MS的汎用性與MA的攻擊力的機動兵器」，負責開發的單位與GP01相同，為亞納海姆電子產業聯合體先進開發事業部。基於聯邦軍的要求，本機具有MA的共通特徵：極大的推進力與戰艦等級的大型光束砲。同時，開發者有鑑於一年戰爭時期MS與MA近戰格鬥時MA的脆弱性，在設計本機時將RX-78-2鋼彈核戰機的概念延伸，用整個MS作為GP03的核心系統，在需要近距離戰鬥時可以讓MS的部分單獨出擊。而其他的部分則是外掛的武器庫與推進系統等，在遠距離火力戰時發揮高速度與高威力的特性。
+</p>
+<p>完成後的GP03成為當代最巨大的機動兵器之一，具有單機對抗一整個MS大隊的火力。外掛的武器庫與推進系統被稱為「歐契斯」ORCHIS（花萼）；而做為核心的MS，RX-78GP03S，則稱為「史迪蒙」STAMEN（雄蕊）。藉由新開發的作業系統以史迪蒙腰部設置的尾部集成機構與歐契斯連結，同時尾部也作為GP03S的推進器用。使駕駛員得以管制與操作整台GP03。六個大型推進器可產生與小型宇宙戰艦相等的推力並獲得極高的加速度，以便突入前線投射大量火力。</p>
+
+<p>機體的右側配備了全長達90公尺的MEGA光束砲，而正面左側則配備了聯邦機體史無前例的I力場產生裝置以阻擋光束攻擊。另外也有針對飛彈攻擊而配備的熱誘餌等裝置。機體下腹部配有兩組大型機械臂並裝有大型光束軍刀，可將吉翁的姆塞級巡洋艦的艦橋一刀兩斷。機頂設置的16個武器庫可各自搭載各種模組化的武器。例如以繩索射出後讓敵機接觸而引爆的爆導索，以及置於莢艙中射入敵機範圍之後全方位射擊的小型飛彈，與MS同樣大小的大型集束飛彈等等。另外也裝載了可讓MS本體使用的折疊式火箭砲，光束步槍，後來被RX-178 鋼彈 MkII使用的Hyper火箭砲，盾牌等武裝。由MS本體上臂所延伸出的折疊機械臂可從武器艙當中取出這些武器。</p>
+
+        </div>
+    </div>
+
+
+
+    <div class="card">
+		<div class="DD">
+		<img src="../img/RX-78GP04G.jpg" width="180px">
+		</div>
+		
+		<div type="button" class="mb-0">
+          <a data-fancybox data-animation-duration="700" data-src="#D3" href="javascript:;" class="btn btn-primary" style="">RX-78GP04G</a>
+        </div> 
+
+        <div style="display: none;" id="D3" class="animated-modal">
+			<div class="BB">
+		  <img src="../img/RX-78GP04G.jpg">
+			</div>
+			<hr class="my-5" />
+          <h2>RX-78GP04G</h2>
+          <p>RX-78GP04G本身並沒有在0083中登場，而是改裝為「卡貝拉‧迪特拉」AGX-04 Gerbera Tetra。並轉交給西瑪艦隊使用，成為西瑪·卡拉豪的後期搭乘機。</p>
+
+<p>AGX-04的機體名稱結合了原本的開發代號「卡貝拉」Gerbera（非洲菊，花語為「神秘」）以及代表"4"的Tetra字樣。</p>
+
+<p>在0083本篇當中，GP04僅存在於設定上。其主要功能為高速突擊與格鬥戰。由於其功能屬性與GP01-Fb互相重疊，而廢止此項開發案。也有一種說法是聯邦軍賈米特夫派（後來成為迪坦斯）故意停止此開發案以利轉交給與其內通的西瑪艦隊，雖屬合理推測，但故事中並無明顯的證據。AGX-04本身雖然與GP系列鋼彈同出一源，但由於開發停止，以及設計者多為舊吉翁系MS相關人員，加以秘密讓渡給西瑪艦隊時必須的偽裝等因素，使得成品外觀與鋼彈系列完全不同。在CD話劇「倫卡洋面砲擊戰」當中AGX-04所使用的高出力光束步槍雖然在設定上稱為AGX-04專用，但由於火力管制系統完全不同，也有一種說法是該步槍原本是GP系列使用者。</p>
+
+<p>GP04原本並無官方的機械設定稿。後來0083機械設定者之一的明貴美加在Hobby Japan「鋼彈 WEAPONS 3」發行時繪製了設定稿，並且以該畫稿為基礎，假想「如果GP04沒有被廢案的狀況」而設計出改造的GUNPLA並且大受歡迎。最後生產出GK模型並且於2004年成為官方設定，並在3DCD短片"鋼彈 EVOLVE 4"劇情亦出現當中其設計圖。後來在漫畫鋼彈EXA中出現,為亞納海姆企業的試用機體。</p>
+
+<p>GP04G的改裝機體，另外還有在GFF中出現的AGX-04 A1。是Katoki Hajime修改得更加接近為由GP04G改裝的機體而設計。因為若以現實的科學作為基本來研究下，AGX-04的改裝會令機體性能下降（例如噴射口擴大而非平衡會浪費推進劑），所以才會有AGX-04 A1的重新設計案。 </p>
+        </div>
+    </div>
+
+  </div>
+</div>
+	
+<div class="AA"> 
+<h2 style="color: #FFFFFF;">鋼彈Z</h2>
+
+<hr class="my-5" />
+	
+<div class="row mb-4">
+	
+
+    <div class="card">
+		<div class="DD">
+		<img src="../img/Z鋼彈.jpg" width="180px">
+		</div>
+		
+		<div type="button" class="mb-0">
+          <a data-fancybox data-animation-duration="700" data-src="#animatedModal4" href="javascript:;" class="btn btn-primary">Z鋼彈</a>
+        </div>
+
+      <div style="display: none;" id="animatedModal4" class="animated-modal">
+			<div class="BB">
+		  <img src="../img/Z鋼彈.jpg">
+			</div>
+			<hr class="my-5" />
+        <h2>Z鋼彈</h2>
+        <p>本機是奧古和阿納海姆公司共同製定的“Z計劃”所開發製造的可變形MS（TMS）。最初建造的3台原型機為MSZ-006-X1、MSZ-006-X2和MSZ-006-X3。這些機體的結構設計為可以變形，但是遇到了不可克服的金屬疲勞問題足以導致機身解體。這個問題後來由於得到了提坦斯的高達MK-2，參考了其可變式框架以及為奧古作戰的新人類駕駛員卡繆·維丹的糾正而解決了。 MSZ-006成為UC歷史上第一批可以變形的MS，可以從MS形態轉為MA“waverider（衝浪者）”形態，由此獲得單機突入大氣圈的能力，潛在能力超過當時任何MS。</p>
+<p>卡繆·維丹以Z高達代替了RX-178高達MK II作為自己的專用機。由於自身新人類能力和新機體強大性能，他在奧古反提坦斯的一系列戰役中取得了輝煌戰績。被Z高達打敗的提坦斯王牌包括捷里特·梅薩、亞扎·加博爾和極為強大的新人類巴普蒂莫斯·西洛克。但是打敗西洛克使卡繆·維丹付出了沉重的代價，他受到臨死時的西洛克的強大的精神攻擊，精神崩潰(劇場版則沒有)。被修復後的Z高達交給了另一位新人類駕駛員捷多·亞西塔。在傑特從阿納海姆公司取得MSZ-010 ZZ高達後，Z高達後來屬於地球聯邦軍駕駛員露·露卡，並參加了第一次新吉翁戰爭，在這場戰爭中最後被摧毀， uc100年，回收修復後的本機與其他高達型ms共同存放於阿克西斯，加以封存，以表聯邦根絕戰爭的決心</p>
+
+        </div>
+    </div>
+	
+    <div class="card">
+		<div class="DD">
+		<img src="../img/NRX-055.jpg" width="180px">
+		</div>
+		
+		<div type="button" class="mb-0">
+          <a data-fancybox data-animation-duration="700" data-src="#A4" href="javascript:;" class="btn btn-primary">NRX-055</a>
+        </div>
+
+        <div style="display: none;" id="A4" class="animated-modal">
+			<div class="BB">
+		  <img src="../img/NRX-055.jpg">
+			</div>
+			<hr class="my-5" />
+          <h2>NRX-055</h2>
+          <p>NRX-055 獵犬（Bound Doc）聯邦軍的奧古斯塔研究所開發的NT專用試作型可變MS，在奧古斯塔研究所內，對該機型的仿心理系統進行了調整。普通駕駛員雖然也可以操縱，但只有強化人或Newtype才能最大限度地發揮該機型的性能。</p>
+<p>獵犬的MS/MA形態都非常奇怪，外觀很笨重，而實際上移動相當靈活。特別是MA形態的加速性和防禦能力佔壓倒性優勢，雖然是實驗機，戰鬥力卻不容小視。在MS形態時呈左右非對稱的特異形狀；MA形態時巨大的上半身收容到下半身的裝甲內部，使得耐彈性和加速性非常良好。</p>
+<p>由於該機是泰坦斯的NT專用型可變大型MS，搭載了大型發電機，武器方面配備了高出力的光束步槍和擴散MEGA粒子炮，以及近身格鬥戰用的機械爪。</p>
+<p>獵犬一共製造了3架，其中一號機由蓋茨·卡帕上尉駕駛，呈灰色塗裝，也是唯一設置了搭乘實驗飛行員的副操縱席的機體，這個副操縱席設置目的是為了監視及收集由羅莎米婭·巴達姆少尉駕駛的NRX-055-2獵犬二號機的戰斗數據。</p>
+        </div>
+    </div>
+
+
+	
+	    <div class="card">
+		<div class="DD">
+		<img src="../img/PMX-003.jpg" width="180px">
+		</div>
+		
+		<div type="button" class="mb-0">
+          <a data-fancybox data-animation-duration="700" data-src="#B4" href="javascript:;" class="btn btn-primary" style="">PMX-003</a>
+        </div>
+
+        <div style="display: none;" id="B4" class="animated-modal">
+			<div class="BB">
+		  <img src="../img/PMX-003.jpg">
+			</div>
+			<hr class="my-5" />
+          <h2>PMX-003</h2>
+          <p>屬於迪坦斯派系的特殊實驗機體，由帕普迪馬斯·希洛克駕駛；他是木星氦3（熱核反應爐主要燃料）採探艦隊的指揮官。宇宙世紀0087年4月末，當採探任務完結回程之時，身為採探船諸比多理斯（ジュピトリス）船長的希羅克，將船上所載有的氦3轉贈予賈米托夫（ジャミトフ・ハイマン），從而加入迪坦斯（ティターンズ）。賈米托夫的原意是將希羅克陪養成為控制當時得令的巴斯克（バスク・オム）的人物，因而穫得不少機會與資源。</p>
+
+ <p>本機設計思想完全是為了實驗，構造中存在四重、五重關節，裙甲內裝備有近戰用暗藏機械臂可以發動突襲，作為智能系統的一種，本機還裝備了生物電腦，如果由NT能力高的駕駛搭乘，可以迅速接收到敵人的「意識波」殺意，提前作出反應達成超水準性能。腿部活動力較差但是全身裝有50台姿勢控制噴嘴，所以雖然身軀龐大，卻非常靈活高度特化適合宇宙戰場。武器有一把專用光束槍、光束刀，由於有大功率發動機提供能量，又有較大體積容納燃料，裝甲也非常之厚，所以戰鬥力強大不低於MSZ-006 Z鋼彈。</p>
+
+ <p>專用光束槍出力鋼彈2.6Mw，達到了MEGA發射器的威力並可連射，由於這把光束槍的E-PACK能源夾是獨自規格的，所以和任何MS都不能互換達成通用，所以這把光束槍是THE O的專用武器。</p>
+
+ <p>名稱THE-0為神學用語為神的意義，本機最後被Z鋼彈以戰機型態衝撞，在決戰中被擊毀；希洛克亦死亡</p>
+        </div>
+    </div>
+
+
+
+    <div class="card">
+		<div class="DD">
+		<img src="../img/PMX-000.jpg" width="180px">
+		</div>
+		
+		<div type="button" class="mb-0">
+          <a data-fancybox data-animation-duration="700" data-src="#C4" href="javascript:;" class="btn btn-primary" style="">PMX-000</a>
+        </div>
+
+        <div style="display: none;" id="C4" class="animated-modal">
+			<div class="BB">
+		  <img src="../img/PMX-000.jpg">
+			</div>
+			<hr class="my-5" />
+          <h2>PMX-000</h2>
+          <p>PMX-000的開發者是地球聯邦政府木星資源採集船丘比特理斯（ジュピトリス）的艦長帕普迪馬斯·希洛克上尉。希洛克在丘比特理斯上自行研製了4種機動兵器，PMX-000是第一種開發成功的。(因此PMX編號亦成為希洛克設計MS的專用編號。)</p>
+
+<p>PMX-000擁有MS（機動戰士）和MA（機動堡壘）兩種形態。按照聯邦軍的不成文規則，長度大於20米的機動兵器被歸類於MA，PMX-000長度超過30米，被歸類為可變型機動堡壘（TMA）。</p>
+
+<p>PMX-000原計劃在木星重力條件下使用，因此配有超大出力的發動機。在地球作戰時，其加速性能非常突出。希洛克加入迪坦斯後，曾親自駕駛此機攔截準備降下地球的卡密兒·維丹等人。後來PMX-000由希洛克的下屬莎拉·薩比亞羅絲駕駛。在Z GUNDAM劇情中，蕾柯亞·隆德被希洛克所吸引而離開A.E.U.G.，第一次為迪坦斯作戰時亦曾使用此機。 </p>
+
+        </div>
+    </div>
+
+
+
+    <div class="card">
+		<div class="DD">
+		<img src="../img/MRX-009.jpg" width="180px">
+		</div>
+		
+		<div type="button" class="mb-0">
+          <a data-fancybox data-animation-duration="700" data-src="#D4" href="javascript:;" class="btn btn-primary" style="">MRX-009</a>
+        </div> 
+
+        <div style="display: none;" id="D4" class="animated-modal">
+			<div class="BB">
+		  <img src="../img/MRX-009.jpg">
+			</div>
+			<hr class="my-5" />
+          <h2>MRX-009</h2>
+          <p>起初，該機也是以繼承RX-78-2高達為目標而進行開發，但村雨研究所在RX-78NT-XNT-X和MRX-007試作型精神感應高達的技術積累上，發現要搭載精神感應系統，就不得不使機體巨大化，最終使得該機的體積都能讓它被歸類為MA了。而該機又可以通過變形切換到MS造型的外觀，所以被稱作可變式MA（TMA=Transform Mobile Armor）。</p>
+<p>雖然名為高達，也有著與一年戰爭時期著名的RX-78-2極其相似的外貌，但精神感應高達其實際系統卻是傳承自吉恩公國軍的MSN-02 吉恩號。實際上，精神感應高達其實也沒必要非得製造成MS的造型。這架以壓制據點、防禦據點為目的而研製的TMA，就武器的定位來看，也和一般的MS全然不同，造成高達型的目的，也就是出於對於“高達”的情結以及震懾敵軍。</p>
+        </div>
+    </div>
+
+  </div>
+</div>
+	
+<div class="AA"> 
+<h2 style="color: #FFFFFF;">鋼彈逆A</h2>
+
+<hr class="my-5" />
+	
+<div class="row mb-4">
+	
+
+    <div class="card">
+		<div class="DD">
+		<img src="../img/WD-M01∀.jpg" width="180px">
+		</div>
+		
+		<div type="button" class="mb-0">
+          <a data-fancybox data-animation-duration="700" data-src="#animatedModal5" href="javascript:;" class="btn btn-primary">WD-M01∀</a>
+        </div>
+
+      <div style="display: none;" id="animatedModal5" class="animated-modal">
+			<div class="BB">
+		  <img src="../img/WD-M01∀.jpg">
+			</div>
+			<hr class="my-5" />
+        <h2>WD-M01∀</h2>
+        <p>起初，該機也是以繼承RX-78-2高達為目標而進行開發，但村雨研究所在RX-78NT-XNT-X和MRX-007試作型精神感應高達的技術積累上，發該機是自月面環型山中發掘出來的黑歷史遺留下的機體，開發的年代及機體的具體性能都是個謎。</p>
+ <p>從黑歷史遺留下來的資料來看，∀高達是由地球方面為鎮壓宇宙殖民地而製造的機體，曾經在戰鬥中重創過同類機體TURN X高達，最後還一度毀滅了地球上的人類文明。</p>
+ <p>TURN A高達有很高的戰鬥能力和自我修復能力，但在剛被發掘出來的時候，大多數機能還處於停滯狀態；</p>
+ <p>本機搭載了IFBD驅動系統，而且I FIELD還可以對機體表面作出有效的保護；</p>
+ <p>推進器設置在機體的腿部，使本機具備了飛行能力；</p>
+ <p>機體背部則裝備著月光蝶的發生裝置。在沉睡了2000多年後，TURN A高達因為偶然事件而甦醒，並參與了地球人與月球住民之間的武裝衝突，最後和同樣是黑歷史遺留下來的機體TURN X高達交戰後一起再度被封印起來。</p>
+
+        </div>
+    </div>
+	
+    <div class="card">
+		<div class="DD">
+		<img src="../img/CONCEPT-X6-1-2.jpg" width="180px">
+		</div>
+		
+		<div type="button" class="mb-0">
+          <a data-fancybox data-animation-duration="700" data-src="#A5" href="javascript:;" class="btn btn-primary">CONCEPT-X6-1-2</a>
+        </div>
+
+        <div style="display: none;" id="A5" class="animated-modal">
+			<div class="BB">
+		  <img src="../img/CONCEPT-X6-1-2.jpg">
+			</div>
+			<hr class="my-5" />
+          <h2>CONCEPT-X6-1-2</h2>
+          <p>CONCEPT-X6-1-2 倒X（Turn X）是自月面環型山中被發掘出來的機體，是基姆·金卡拉姆的專用機，與WD-M01倒A高達具有同等的性能，也搭載了同樣的系統，更能解析、複製倒A高達的機體性能。 </p>
+<p>倒X高達的駕駛艙位於機體頭部，軀幹、手臂、腳部等部分均可在分離後單獨行動（推測使用的是塞可繆系統），裝備有月光蝶系統、兩門腳部MEGA粒子炮、右臂溶斷破碎機械手、一支光束步槍、一門火箭炮、一門3連裝光束投射系統和擁有全身分離攻擊系統的本機，其性能絲毫不遜色於∀高達，能在中、近距離戰鬥中發揮出壓倒性力量。 </p>
+        </div>
+    </div>
+
+
+	
+	    <div class="card">
+		<div class="DD">
+		<img src="../img/AMX-109.jpg" width="180px">
+		</div>
+		
+		<div type="button" class="mb-0">
+          <a data-fancybox data-animation-duration="700" data-src="#B5" href="javascript:;" class="btn btn-primary" style="">AMX-109</a>
+        </div>
+
+        <div style="display: none;" id="B5" class="animated-modal">
+			<div class="BB">
+		  <img src="../img/AMX-109.jpg">
+			</div>
+			<hr class="my-5" />
+          <h2>AMX-109</h2>
+          <p>本機是新吉恩軍為侵攻地球而開發的水陸兩用型MS，也是舊吉恩軍水陸兩用MS——MSM-03戰蟹的發展型。
+為了減少水中前進的阻力，本機的手足都可收藏在身體內部，此時機體就變形為MA形態，增強了機體的耐彈性及耐壓性；
+另外，在變成這種形態時，機體還可利用旋翼在水面上進行氣墊式航行。本機採用了水冷式發動機，還在機體上設置了格鬥戰用機械爪。
+作為水中用MS而言，本機具有重裝甲、高火力的特點，完成度相當高。</p>
+<p>但是由於該機是在阿克西斯內（宇宙）設計的機體，面對地球上真實的高鹽度海洋環境，該機的可變式框架出現了可靠性不足的情況，怪異的體型也令該機的操作複雜程度甚於以往，因此地球的駕駛員們更喜歡聯邦制的RMS-192 水手扎古，對該機的評價並不高。</p>
+<p>同時，由於並非出自阿克西斯自身的設計，整個機體的構部件都異於阿克西斯的其他MS，給後勤造成極大壓力，令該機的單體造價過高、生產困難。</p>
+<p>根據戰後得到的資料顯示，製造一台卡普爾的工時約等於製造2.5台水手扎古的工時，這點對於人力和生產力極端不足的阿克西斯而言顯然是極為致命的。</p>
+　　<p>第一次新吉恩戰爭時期，為了進行真正的海戰，阿克西斯的技術人員開發了數台卡普爾試作機。</p>
+<p>0096年，也有該機出現在了拉普拉斯戰爭中，參加了在達喀爾和特林頓基地的戰鬥。</p>
+        </div>
+    </div>
+
+
+
+    <div class="card">
+		<div class="DD">
+		<img src="../img/NRS-P701R.jpg" width="180px">
+		</div>
+		
+		<div type="button" class="mb-0">
+          <a data-fancybox data-animation-duration="700" data-src="#C5" href="javascript:;" class="btn btn-primary" style="">NRS-P701R</a>
+        </div>
+
+        <div style="display: none;" id="C5" class="animated-modal">
+			<div class="BB">
+		  <img src="../img/NRS-P701R.jpg">
+			</div>
+			<hr class="my-5" />
+          <h2>NRS-P701R</h2>
+          <p>本機是地球住民在得到迪安娜回歸軍的NRS-P701 戈佐之後對其進行大幅改裝而得到的機體。技術人員將電磁炮換為機關炮，另外還追加了一把接近戰用的熱能斧。總體上來講，由於地球住民方面技術的不成熟，以及改造的匆忙，使得本機的性能並不如原型機NRS-P701 戈佐。</p>
+
+        </div>
+    </div>
+
+
+
+    <div class="card">
+		<div class="DD">
+		<img src="../img/MRC-F20.jpg" width="180px">
+		</div>
+		
+		<div type="button" class="mb-0">
+          <a data-fancybox data-animation-duration="700" data-src="#D5" href="javascript:;" class="btn btn-primary" style="">MRC-F20</a>
+        </div> 
+
+        <div style="display: none;" id="D5" class="animated-modal">
+			<div class="BB">
+		  <img src="../img/MRC-F20.jpg">
+			</div>
+			<hr class="my-5" />
+          <h2>MRC-F20</h2>
+          <p>本蘇摩是迪安娜·索雷爾女王直屬的親衛隊所使用的MS。與倒A高達一樣，本機使用了IFBD作為主驅動，還裝備了螺旋位相型超震動計場縮退爐（HPHGCP），可對敵MS的IFBD進行干涉，誘使其機能停止；另外，由於搭載了空間斥力處理裝置（FRP），使機體具有很高的機動性，擅長於接近戰；除了以上裝備外，本機還裝備了專用的推進器，可進行飛行。綜合來看，本機可以說是射擊戰、格鬥戰均擅長的高泛用性機體。除了親衛隊隊長哈利·奧德中尉的搭乘機塗裝色為金色之外，其餘機體的塗裝色均為銀色。</p>
+        </div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+	<!-- 導覽列 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- 導覽列 -->
+		<script>
+		$(function(){
+				var getblurContent = $(".content");
+				var pagecopy = getblurContent.clone(true);
+				var blurryContent = $(".blurViewport .content-wrap");
+				var blurryContentViewport = $(".blurViewport");
+				blurryContent.append(pagecopy);
+
+			$(window).scroll(function(){
+        blurryContentViewport.scrollTop(window.pageYOffset);
+    	});
+		});
+
+		</script>
+
+
+	
+	<!-- JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+</body>
+</html>
